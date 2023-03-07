@@ -7,18 +7,15 @@ use Illuminate\Http\Request;
 class PageController extends Controller
 {
     public function HandleGetHome(){
-        return view('under-construction');
-    }
-    public function HandleGetHome2(){
-        return view('home2');
+        return view('pages.home');
     }
     public function HandleGetAboutUs(){
-
+        return view('pages.about_us');
     }
     public function HandleGetContact(){
-
+        return view('pages.contact');
     }
     public function handleGetCampaign(){
-
+        return view('pages.campaign');
     }
 }

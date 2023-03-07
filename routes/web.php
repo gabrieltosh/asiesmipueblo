@@ -13,4 +13,8 @@ use App\Http\Controllers\PageController;
 |
 */
 
-Route::get('/',[PageController::class,'HandleGetHome']);
+Route::get('/',[PageController::class,'HandleGetHome'])->name('home_page');
+Route::get('campaign',[PageController::class,'HandleGetCampaign'])->name('campaign_page');
+Route::get('about_us',[PageController::class,'HandleGetAboutUs'])->name('about_us_page');
+Route::get('contact',[PageController::class,'HandleGetContact'])->name('contact_page');
+
