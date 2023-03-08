@@ -1,7 +1,7 @@
 <header class="page-head">
     <!-- RD Navbar Transparent-->
     <div class="rd-navbar-wrap">
-        <nav class="rd-navbar-static rd-navbar-logo-center rd-navbar-light" data-md-device-layout="rd-navbar-fixed"
+        <nav class="rd-navbar rd-navbar-logo-center rd-navbar-light" data-md-device-layout="rd-navbar-fixed"
             data-lg-device-layout="rd-navbar-static" data-lg-stick-up-offset="110px" data-lg-auto-height="true"
             data-md-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-stick-up="true">
             <div class="rd-navbar-inner">
