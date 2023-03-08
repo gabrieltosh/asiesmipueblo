@@ -9,13 +9,13 @@
                     <div class="rd-navbar-top-block row justify-content-xl-center align-items-xl-center">
                         <div class="col-xl-3">
                             <p class="d-none d-xl-block">Llamanos: <span class="novi-icon mdi mdi-phone"></span> <a
-                                    href="tel:#">1-800-1234-567</a></p>
+                                    href="tel:#">+591 77500190</a></p>
                         </div>
                         <div class="col-xl-6 text-center">
                             <!--Navbar Brand-->
                             <div class="rd-navbar-brand"><a href="index.html"><img
-                                        style='margin-top: -5px;margin-left: -15px;' width='350' height='90'
-                                        src='{{asset("assets/images/logo_h.png")}}' alt='' /></a></div>
+                                        style='margin-top: -5px;margin-left: -15px;' width='280' height='50'
+                                        src='{{asset("assets/images/logo_h_1.png")}}' alt='' /></a></div>
                         </div>
                         <div class="col-xl-3">
                             <div class="form-search-wrap">
@@ -51,8 +51,8 @@
                             <div class="rd-navbar-mobile-scroll">
                                 <!--Navbar Brand Mobile-->
                                 <div class="rd-navbar-mobile-brand"><a href="index.html"><img
-                                            style='margin-top: -5px;margin-left: -15px;' width='138' height='31'
-                                            src='images/intense/logo-dark.png' alt='' /></a></div>
+                                            style='margin-top: -5px;margin-left: -15px;' width='190' height='150'
+                                            src='{{asset("assets/images/logo_v.png")}}' alt='' /></a></div>
                                 <!-- RD Navbar Nav-->
                                 <ul class="rd-navbar-nav">
                                     <li class="active"><a href="{{route('home_page')}}"><span>Inicio</span></a>

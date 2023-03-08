@@ -2,116 +2,81 @@
 
 @section('content')
 
-    <div class="swiper-container swiper-slider" data-loop="true" data-height="100vh" data-dragable="false"
-        data-min-height="480px">
-        <div class="swiper-wrapper text-center">
-            <div class="swiper-slide" id="page-loader" data-slide-bg="images/intros/intro-04-1920x955.jpg"
-                data-preview-bg="images/intros/intro-04-1920x955.jpg">
-                <div class="swiper-caption swiper-parallax">
-                    <div class="swiper-slide-caption">
-                        <div class="container">
-                            <div class="row justify-content-xl-center">
-                                <div class="col-xl-12">
-                                    <h1><span class="big text-uppercase" data-caption-animate="fadeInUp"
-                                            data-caption-delay="700">ASI ES MI PUEBLO</span></h1>
-                                </div>
-                                <div class="col-xl-10 offset-top-30">
-                                    <h4 class="d-none d-md-block text-light" data-caption-animate="fadeInUp"
-                                        data-caption-delay="900">
-                                        The smartest and most flexible bootstrap template by TemplateMonster you've ever
-                                        seen.
-                                        Create exactly what you need with our powerful bootstrap toolkit.
-                                    </h4>
-                                    <div class="group group-xl offset-top-20 offset-sm-top-50"><a
-                                            class="btn btn-primary btn-lg btn-anis-effect"
-                                            href="//documentation.zemez.io/html/bootstrap/intense/" target="_blank"
-                                            data-caption-animate="fadeInUp" data-caption-delay="1200"><span
-                                                class="btn-text">Buy intense now</span></a><a
-                                            class="btn btn-default btn-lg btn-anis-effect" href="#"
-                                            data-custom-scroll-to="home-section-welcome"
-                                            data-caption-animate="fadeInUp" data-caption-delay="1200"><span
-                                                class="btn-text">Start a journey</span></a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+<div class="rev_slider_wrapper--holder">
+    <div class="rev_slider_wrapper fullscreen-container context-dark">
+      <!-- the ID here will be used in the JavaScript below to initialize the slider-->
+      <div class="rev_slider fullscreenbanner" id="rev_slider_1" style="display:none">
+        <!-- BEGIN MAIN SLIDE LIST-->
+        <ul>
+          <li data-transition="zoomout"><img class="rev-slidebg rev-slidebg" data-bgposition="center center" data-kenburns="on" data-duration="20000" data-ease="Linear.easeNone" data-scalestart="140" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="15" src="{{asset('assets/images/wallpaper_3f.jpeg')}}" alt="Sky">
+            <div class="tp-caption" data-y="['center','center','center','center']" data-x="['center','center','center','center']" data-height="100%" data-type="row" data-columnbreak="2" data-basealign="slide" data-responsive_offset="on" data-responsive="off" data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:400,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeIn&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:400,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power2.easeIn&quot;}]" data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textalign="['inherit','inherit','inherit','inherit']" style="z-index: 9; white-space: nowrap; font-size: 20px; line-height: 22px; font-weight: 400; color: rgba(255, 255, 255, 1.00);">
+              <div class="tp-caption" data-y="['center','center','center','center']" data-x="['center','center','center','center']" data-type="column" data-frames="[{&quot;delay&quot;:&quot;+0&quot;,&quot;speed&quot;:400,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;opacity:0;&quot;,&quot;to&quot;:&quot;opacity:1;&quot;,&quot;ease&quot;:&quot;Power2.easeIn&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:400,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power2.easeIn&quot;}]">
+                <div class="container">
+                  <div class="row justify-content-sm-center align-items-sm-center">
+                    <div class="col-xl-10">
+                      <div class="tp-caption" data-fontsize="['62', '48', '36', '28']" data-type="text" data-lineheight="['68', '44', '42', '34']" data-y="['center','center','center','center']" data-x="['center','center','center','center']" data-frames="[{&quot;delay&quot;:&quot;+400&quot;,&quot;speed&quot;:1700,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:250px;opacity:0;fb:50px;&quot;,&quot;to&quot;:&quot;o:1;fb:0;&quot;,&quot;ease&quot;:&quot;Power4.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:400,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;fb:0;&quot;,&quot;ease&quot;:&quot;Power2.easeIn&quot;}]">
+                        <h1><span class="big text-uppercase">ASI ES MI PUEBLO</span></h1>
+                      </div>
+                      <div class="d-none d-md-block offset-top-30 tp-caption" data-visibility="['on', 'on', 'off', 'off']" data-type="text" data-y="['center','center','center','center']" data-x="['center','center','center','center']" data-frames="[{&quot;delay&quot;:&quot;600&quot;,&quot;speed&quot;:2000,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:250px;opacity:0;fb:50px;&quot;,&quot;to&quot;:&quot;o:1;fb:0;&quot;,&quot;ease&quot;:&quot;Power4.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:400,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;fb:0;&quot;,&quot;ease&quot;:&quot;Power2.easeIn&quot;}]">
+                        <h4 class="text-light">
+                          The smartest and most flexible bootstrap template by TemplateMonster you've ever seen.
+                          Create exactly what you need with our powerful bootstrap toolkit.
+                        </h4>
+                      </div>
+                      <div class="tp-caption" data-whitespace="['normal', 'normal', 'nowrap', 'normal']" data-type="text" data-fontsize="['inherit', 'inherit', 'inherit', 'inherit']" data-lineheight="['inherit', 'inherit', 'inherit', 'inherit']" data-y="['center','center','center','center']" data-x="['center','center','center','center']" data-frames="[{&quot;delay&quot;:&quot;700&quot;,&quot;speed&quot;:2000,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:250px;opacity:0;fb:50px;&quot;,&quot;to&quot;:&quot;o:1;fb:0;&quot;,&quot;ease&quot;:&quot;Power4.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:400,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;fb:0;&quot;,&quot;ease&quot;:&quot;Power2.easeIn&quot;}]">
+                        <div class="group group-xl offset-top-20 offset-sm-top-50"><a class="btn btn-primary btn-lg btn-anis-effect" href="//documentation.zemez.io/html/bootstrap/intense/" target="_blank"><span class="btn-text">Buy intense now</span></a><a class="btn btn-default btn-lg btn-anis-effect" href="#" data-waypoint-to="#section-childs"><span class="btn-text">Start a journey</span></a></div>
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
-            <div class="swiper-slide" data-preview-bg="video/intro-video/intro-video-lg.jpg">
-                <div class="bg-vide" data-vide-bg="video/intro-video/intro-video-lg"
-                    data-vide-options="posterType: jpg">
-                    <div class="swiper-caption swiper-parallax">
-                        <div class="swiper-slide-caption">
-                            <div class="container">
-                                <div class="row justify-content-xl-center">
-                                    <div class="col-xl-12">
-                                        <h1><span class="big text-uppercase" data-caption-animate="fadeInUp"
-                                                data-caption-delay="700">Built as a framework</span></h1>
-                                    </div>
-                                    <div class="col-xl-10 offset-top-30">
-                                        <h4 class="d-none d-md-block text-light" data-caption-animate="fadeInUp"
-                                            data-caption-delay="900">
-                                            Intense was designed as extended version of bootstrap, built as a complex
-                                            and flexible solution with a dozen of completely new
-                                            utilities, components and plugins.
-                                        </h4>
-                                        <div class="group group-xl offset-top-20 offset-sm-top-50"><a
-                                                class="btn btn-icon btn-icon-left btn-default btn-lg btn-anis-effect"
-                                                href="ui-kit.html" data-caption-animate="fadeInUp"
-                                                data-caption-delay="1200"><span class="btn-text">See it in
-                                                    action</span></a></div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
+          </li>
+          <li data-transition="zoomout"><img class="rev-slidebg rev-slidebg" data-bgposition="center center" data-kenburns="on" data-duration="20000" data-ease="Linear.easeNone" data-scalestart="140" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="15" src="{{asset('assets/images/wallpaper_2f.jpeg')}}" alt="Sky">
+            <div class="tp-caption" data-y="['center','center','center','center']" data-x="['center','center','center','center']" data-height="100%" data-type="row" data-columnbreak="2" data-basealign="slide" data-responsive_offset="on" data-responsive="off" data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:400,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeIn&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:400,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power2.easeIn&quot;}]" data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textalign="['inherit','inherit','inherit','inherit']">
+              <div class="tp-caption" data-y="['center','center','center','center']" data-x="['center','center','center','center']" data-type="column" data-frames="[{&quot;delay&quot;:&quot;+0&quot;,&quot;speed&quot;:400,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;opacity:0;&quot;,&quot;to&quot;:&quot;opacity:1;&quot;,&quot;ease&quot;:&quot;Power2.easeIn&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:400,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power2.easeIn&quot;}]">
+                <div class="container">
+                  <div class="row justify-content-sm-center align-items-sm-center">
+                    <div class="col-xl-12">
+                      <div class="tp-caption" data-fontsize="['62', '48', '36', '28']" data-type="text" data-lineheight="['68', '44', '42', '34']" data-y="['center','center','center','center']" data-x="['center','center','center','center']" data-frames="[{&quot;delay&quot;:&quot;+400&quot;,&quot;speed&quot;:1700,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:250px;opacity:0;fb:50px;&quot;,&quot;to&quot;:&quot;o:1;fb:0;&quot;,&quot;ease&quot;:&quot;Power4.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:400,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;fb:0;&quot;,&quot;ease&quot;:&quot;Power2.easeIn&quot;}]">
+                        <h1><span class="big text-uppercase">ASI ES MI PUEBLO</span></h1>
+                      </div>
+                      <div class="d-none d-md-block offset-top-30 tp-caption" data-visibility="['on', 'on', 'off', 'off']" data-type="text" data-y="['center','center','center','center']" data-x="['center','center','center','center']" data-frames="[{&quot;delay&quot;:&quot;600&quot;,&quot;speed&quot;:2000,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:250px;opacity:0;fb:50px;&quot;,&quot;to&quot;:&quot;o:1;fb:0;&quot;,&quot;ease&quot;:&quot;Power4.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:400,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;fb:0;&quot;,&quot;ease&quot;:&quot;Power2.easeIn&quot;}]">
+                        <h4 class="text-light">Intense is the easiest way for you to build different sites without using many themes.</h4>
+                      </div>
+                      <div class="tp-caption" data-whitespace="['normal', 'normal', 'nowrap', 'normal']" data-type="text" data-fontsize="['inherit', 'inherit', 'inherit', 'inherit']" data-lineheight="['inherit', 'inherit', 'inherit', 'inherit']" data-y="['center','center','center','center']" data-x="['center','center','center','center']" data-frames="[{&quot;delay&quot;:&quot;700&quot;,&quot;speed&quot;:2000,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:250px;opacity:0;fb:50px;&quot;,&quot;to&quot;:&quot;o:1;fb:0;&quot;,&quot;ease&quot;:&quot;Power4.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:400,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;fb:0;&quot;,&quot;ease&quot;:&quot;Power2.easeIn&quot;}]">
+                        <div class="group group-xl offset-top-20 offset-sm-top-50"><a class="btn btn-default btn-lg btn-anis-effect" href="index.html#section-childs"><span class="btn-text">Discover child themes</span></a></div>
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
-            <div class="swiper-slide" data-slide-bg="images/intros/intro-06-1920x955.jpg"
-                data-preview-bg="images/intros/intro-06-1920x955.jpg">
-                <div class="swiper-caption swiper-parallax">
-                    <div class="swiper-slide-caption">
-                        <div class="container">
-                            <div class="row justify-content-xl-center">
-                                <div class="col-xl-12">
-                                    <h1><span class="big text-uppercase" data-caption-animate="fadeInUp"
-                                            data-caption-delay="700">ULTRA sharp & RESPONSIVE</span></h1>
-                                </div>
-                                <div class="col-xl-10 offset-top-30">
-                                    <h4 class="d-none d-md-block text-light offset-bottom-0"
-                                        data-caption-animate="fadeInUp" data-caption-delay="900">
-                                        Beautiful and clean designs are optimized for all screen sizes
-                                        and types. Taste a new meaning of Retina Ready.
-                                    </h4>
-                                    <div class="group group-xl offset-top-20 offset-sm-top-50"><a
-                                            class="btn btn-icon btn-icon-left btn-primary btn-lg btn-anis-effect"
-                                            href="//documentation.zemez.io/html/bootstrap/intense/" target="_blank"
-                                            data-caption-animate="fadeInUp" data-caption-delay="1200"><span
-                                                class="novi-icon icon mdi mdi-cart-outline"></span><span
-                                                class="btn-text">Buy intense now</span></a></div>
-                                </div>
-                            </div>
-                        </div>
+          </li>
+          <li data-transition="zoomout"><img class="rev-slidebg rev-slidebg" data-bgposition="center center" data-kenburns="on" data-duration="20000" data-ease="Linear.easeNone" data-scalestart="140" data-scaleend="100" data-rotatestart="0" data-rotateend="0" data-offsetstart="0 0" data-offsetend="0 0" data-bgparallax="15" src="{{asset('assets/images/wallpaper_1f.jpeg')}}" alt="Sky">
+            <div class="tp-caption" data-y="['center','center','center','center']" data-x="['center','center','center','center']" data-height="100%" data-type="row" data-columnbreak="2" data-basealign="slide" data-responsive_offset="on" data-responsive="off" data-frames="[{&quot;delay&quot;:10,&quot;speed&quot;:400,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;opacity:0;&quot;,&quot;to&quot;:&quot;o:1;&quot;,&quot;ease&quot;:&quot;Power2.easeIn&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:400,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power2.easeIn&quot;}]" data-margintop="[0,0,0,0]" data-marginright="[0,0,0,0]" data-marginbottom="[0,0,0,0]" data-marginleft="[0,0,0,0]" data-textalign="['inherit','inherit','inherit','inherit']">
+              <div class="tp-caption" data-y="['center','center','center','center']" data-x="['center','center','center','center']" data-type="column" data-frames="[{&quot;delay&quot;:&quot;+0&quot;,&quot;speed&quot;:400,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;opacity:0;&quot;,&quot;to&quot;:&quot;opacity:1;&quot;,&quot;ease&quot;:&quot;Power2.easeIn&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:400,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;&quot;,&quot;ease&quot;:&quot;Power2.easeIn&quot;}]">
+                <div class="container">
+                  <div class="row justify-content-sm-center align-items-sm-center">
+                    <div class="col-xl-12">
+                      <div class="tp-caption" data-fontsize="['62', '48', '36', '28']" data-type="text" data-lineheight="['68', '44', '42', '34']" data-y="['center','center','center','center']" data-x="['center','center','center','center']" data-frames="[{&quot;delay&quot;:&quot;+400&quot;,&quot;speed&quot;:1700,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:250px;opacity:0;fb:50px;&quot;,&quot;to&quot;:&quot;o:1;fb:0;&quot;,&quot;ease&quot;:&quot;Power4.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:400,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;fb:0;&quot;,&quot;ease&quot;:&quot;Power2.easeIn&quot;}]">
+                        <h1><span class="big text-uppercase">ASI ES MI PUEBLO</span></h1>
+                      </div>
+                      <div class="d-none d-md-block offset-top-30 tp-caption" data-visibility="['on', 'on', 'off', 'off']" data-type="text" data-y="['center','center','center','center']" data-x="['center','center','center','center']" data-frames="[{&quot;delay&quot;:&quot;600&quot;,&quot;speed&quot;:2000,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:250px;opacity:0;fb:50px;&quot;,&quot;to&quot;:&quot;o:1;fb:0;&quot;,&quot;ease&quot;:&quot;Power4.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:400,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;fb:0;&quot;,&quot;ease&quot;:&quot;Power2.easeIn&quot;}]">
+                        <h4 class="text-light">Intense is the easiest way for you to build different sites without using many themes.</h4>
+                      </div>
+                      <div class="tp-caption" data-whitespace="['normal', 'normal', 'nowrap', 'normal']" data-type="text" data-fontsize="['inherit', 'inherit', 'inherit', 'inherit']" data-lineheight="['inherit', 'inherit', 'inherit', 'inherit']" data-y="['center','center','center','center']" data-x="['center','center','center','center']" data-frames="[{&quot;delay&quot;:&quot;700&quot;,&quot;speed&quot;:2000,&quot;frame&quot;:&quot;0&quot;,&quot;from&quot;:&quot;y:250px;opacity:0;fb:50px;&quot;,&quot;to&quot;:&quot;o:1;fb:0;&quot;,&quot;ease&quot;:&quot;Power4.easeOut&quot;},{&quot;delay&quot;:&quot;wait&quot;,&quot;speed&quot;:400,&quot;frame&quot;:&quot;999&quot;,&quot;to&quot;:&quot;opacity:0;fb:0;&quot;,&quot;ease&quot;:&quot;Power2.easeIn&quot;}]">
+                        <div class="group group-xl offset-top-20 offset-sm-top-50"><a class="btn btn-default btn-lg btn-anis-effect" href="index.html#section-childs"><span class="btn-text">Discover child themes</span></a></div>
+                      </div>
                     </div>
+                  </div>
                 </div>
+              </div>
             </div>
-        </div>
-        <div class="swiper-button swiper-button-prev swiper-parallax">
-            <div class="preview">
-                <div class="preview__img preview__img-3"></div>
-                <div class="preview__img preview__img-2"></div>
-                <div class="preview__img preview__img-1"></div>
-            </div>
-        </div>
-        <div class="swiper-button swiper-button-next swiper-parallax">
-            <div class="preview">
-                <div class="preview__img preview__img-1"></div>
-                <div class="preview__img preview__img-2"></div>
-                <div class="preview__img preview__img-3"></div>
-            </div>
-        </div>
-        <div class="swiper-pagination"></div>
+          </li>
+        </ul>
+      </div>
     </div>
+  </div>
 
 @endsection
