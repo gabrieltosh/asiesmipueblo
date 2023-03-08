@@ -181,6 +181,19 @@
                 </ul>
               </address>
             </div>
+            <div class="col-md-5 col-lg-3 offset-top-50 "><img class="img-fluid d-inline-block" src="{{asset('assets/images/about_us_profile_7.jpeg')}}" width="270" height="270" alt="">
+                <div class="text-lg-left offset-top-20">
+                  <div>
+                    <h5 class="font-weight-bold text-primary"><a href="team-member.html">Gary Roque Quispe</a></h5>
+                  </div>
+                </div>
+                <address class="contact-info text-lg-left">
+                  <ul class="list-unstyled p">
+                      <li class="d-block"><span class="icon novi-icon icon-xxs mdi mdi-account text-middle"></span> <a class="d-inline-block text-middle" href="tel:1-800-7650-986">Post Productor</a>
+                      </li>
+                  </ul>
+                </address>
+              </div>
           </div>
         </div>
       </section>

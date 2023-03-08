@@ -1,7 +1,7 @@
 <header class="page-head">
     <!-- RD Navbar Transparent-->
     <div class="rd-navbar-wrap">
-        <nav class="rd-navbar rd-navbar-logo-center rd-navbar-light" data-md-device-layout="rd-navbar-fixed"
+        <nav class="rd-navbar-static rd-navbar-logo-center rd-navbar-light" data-md-device-layout="rd-navbar-fixed"
             data-lg-device-layout="rd-navbar-static" data-lg-stick-up-offset="110px" data-lg-auto-height="true"
             data-md-layout="rd-navbar-fixed" data-lg-layout="rd-navbar-static" data-lg-stick-up="true">
             <div class="rd-navbar-inner">
@@ -14,7 +14,7 @@
                         <div class="col-xl-6 text-center">
                             <!--Navbar Brand-->
                             <div class="rd-navbar-brand"><a href="index.html"><img
-                                        style='margin-top: -5px;margin-left: -15px;' width='370' height='90'
+                                        style='margin-top: -5px;margin-left: -15px;' width='350' height='90'
                                         src='{{asset("assets/images/logo_h.png")}}' alt='' /></a></div>
                         </div>
                         <div class="col-xl-3">
