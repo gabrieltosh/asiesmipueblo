@@ -1502,14 +1502,14 @@ $document.ready( function () {
 						current: 0, processed: 0, timer: {}
 					};
 
-				if ($('.rd-navbar-search-toggle').length) {
+				/*if ($('.rd-navbar-search-toggle').length) {
 					var toggle = $('.rd-navbar-search-toggle');
 					toggle.on('click', function () {
 						if (!($(this).hasClass('active'))) {
 							searchItem.find('input').val('').trigger('propertychange');
 						}
 					});
-				}
+				}*/
 
 				if (options.live) {
 					searchItem.find('input').on("keyup input propertychange", $.proxy(function () {

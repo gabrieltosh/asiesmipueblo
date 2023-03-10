@@ -17,22 +17,8 @@
                                         style='margin-top: -5px;margin-left: -15px;' width='280' height='50'
                                         src='{{asset("assets/images/logo_h_1.png")}}' alt='' /></a></div>
                         </div>
-                        <div class="col-xl-3">
-                            <div class="form-search-wrap">
-                                <!-- RD Search Form-->
-                                <!--<form class="form-search rd-search" action="search-results.html" method="GET">
-                                    <div class="form-group">
-                                        <label class="form-label form-search-label form-label-sm"
-                                            for="rd-navbar-form-search-widget">Search</label>
-                                        <input
-                                            class="form-search-input input-sm form-control form-control-gray-lightest input-sm"
-                                            id="rd-navbar-form-search-widget" type="text" name="s"
-                                            autocomplete="off">
-                                    </div>
-                                    <button class="form-search-submit" type="submit"><span
-                                            class="novi-icon mdi mdi-magnify"></span></button>
-                                </form>-->
-                            </div>
+                        <div class="col-xl-3 text-center">
+                            <a href="https://www.facebook.com/asiesmipueblo2025" target="_blank" style="background-color: #0165E1;color:white;" class="btn btn-xs btn-icon btn-icon-left"><span class="icon novi-icon mdi mdi-facebook"></span>Asi es mi pueblo</a>
                         </div>
                     </div>
                     <!-- RD Navbar Panel-->
@@ -41,8 +27,9 @@
                         <button class="rd-navbar-toggle"
                             data-rd-navbar-toggle=".rd-navbar, .rd-navbar-nav-wrap"><span></span></button>
                         <!-- RD Navbar Top Panel Toggle-->
-                        <button class="rd-navbar-search-toggle"
-                            data-rd-navbar-toggle=".rd-navbar, .form-search-wrap"><span></span></button>
+                        <a href="https://www.facebook.com/asiesmipueblo2025" target="_blank" class="rd-navbar-search-toggle"
+                            ><span class="icon novi-icon mdi mdi-facebook"></span></a>
+
                     </div>
                 </div>
                 <div class="rd-navbar-menu-wrap">

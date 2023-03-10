@@ -14,15 +14,17 @@
                                 <p>Si tienes alguna pregunta, solo llena el formulario de contacto, y nosotros de contestaremos inmediatamente. Si tu vives cerca visitanos.</p>
                                 <address class="contact-info offset-top-50">
                                   <p class="h6 text-uppercase font-weight-bold text-picton-blue letter-space-none offset-top-none">Nuestra dirección</p>
-                                  <p>9863 - 9867 MILL ROAD, CAMBRIDGE, MG09 99HT.</p>
-                                  <dl class="offset-top-0">
-                                    <dt style="color: #FFFF;">Telefono</dt>
-                                    <dd ><a href="tel:#" style="color: #FFFF;">+1 800 603 6035</a></dd>
-                                  </dl>
-                                  <dl>
-                                    <dt style="color: #FFFF;">Correo:</dt>
-                                    <dd ><a href="mailto:#" style="color: #FFFF !important;">mail@demolink.org</a></dd>
-                                  </dl>
+                                  <p>Bolivar s/n (al lado de la parroquia Cuerpo de Cristo) zona Villa Adela, El Alto, 591 La Paz, Bolivia</p>
+                                  <p class="h6 text-uppercase font-weight-bold text-picton-blue letter-space-none offset-top-none">Llamanos</p>
+                                  <p><a href="tel:77500190">77500190</a>&nbsp;&nbsp;&nbsp;<a href="tel:71926270">71926270</a></p>
+                                  <p class="h6 text-uppercase font-weight-bold text-picton-blue letter-space-none offset-top-none">Escribenos al Whatsapp</p>
+                                  <p>
+                                    <a target="_blank" href="https://wa.me/59171926270?text=Hola!!%20necesito%20informacion%20acerca%20del%20programa" class="btn btn-xs btn-primary btn-icon btn-icon-left"><span class="icon novi-icon mdi mdi-whatsapp"></span>+591 71926270</a>
+                                    &nbsp;&nbsp;&nbsp;
+                                    <a target="_blank" href="https://wa.me/59177500190?text=Hola!!%20necesito%20informacion%20acerca%20del%20programa" class="btn btn-xs btn-primary btn-icon btn-icon-left"><span class="icon novi-icon mdi mdi-whatsapp"></span>+591 77500190</a>
+                                  </p>
+                                  <p class="h6 text-uppercase font-weight-bold text-picton-blue letter-space-none offset-top-none">Correo</p>
+                                  <p><a href="mailto:contacto@asiesmipueblo.com.bo">contacto@asiesmipueblo.com.bo</a></p>
                                 </address>
                             </div>
                             <div class="col-lg-6 col-xxl-6 offset-md-top-66">
@@ -47,7 +49,7 @@
                                             </div>
                                             <div class="group offset-top-30">
                                                 <div class="group-item element-fullwidth">
-                                                    <button class="btn btn-block btn-primary" type="submit">Enviar</button>
+                                                    <button class="btn btn-block btn-deluge" type="submit">Enviar</button>
                                                 </div>
                                             </div>
                                         </form>
