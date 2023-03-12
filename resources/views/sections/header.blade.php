@@ -9,7 +9,7 @@
                     <div class="rd-navbar-top-block row justify-content-xl-center align-items-xl-center">
                         <div class="col-xl-3">
                             <p class="d-none d-xl-block">Llamanos: <span class="novi-icon mdi mdi-phone"></span> <a
-                                    href="tel:#">+591 77500190</a></p>
+                                    href="tel:#">+591 77500190 </a></p>
                         </div>
                         <div class="col-xl-6 text-center">
                             <!--Navbar Brand-->
@@ -42,14 +42,15 @@
                                             src='{{asset("assets/images/logo_v.png")}}' alt='' /></a></div>
                                 <!-- RD Navbar Nav-->
                                 <ul class="rd-navbar-nav">
-                                    <li class="active"><a href="{{route('home_page')}}"><span>Inicio</span></a>
+                                    <li class="{{request()->is('/')?'active':''}}"><a href="{{route('home_page')}}"><span>Inicio</span></a>
                                     </li>
-                                    <li><a class="new" href="{{route('campaign_page')}}"><span>Campañas</span></a>
+                                    <li class="{{request()->is('campaign')?'active':''}}"><a href="{{route('campaign_page')}}"><span>Campañas</span></a>
                                     </li>
-                                    <li><a href="{{route('about_us_page')}}"><span>Nosotros</span></a>
+                                    <li class="{{request()->is('about_us')?'active':''}}"><a href="{{route('about_us_page')}}"><span>Nosotros</span></a>
                                     </li>
-                                    <li><a href="{{route('contact_page')}}"><span>Contactanos</span></a>
+                                    <li class="{{request()->is('contact')?'active':''}}"><a href="{{route('contact_page')}}"><span>Contactanos</span></a>
                                     </li>
+                                    <!--request()->is('sites/*/edit')-->
                                 </ul>
                             </div>
                         </div>

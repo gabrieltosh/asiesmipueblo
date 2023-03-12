@@ -20,5 +20,7 @@
     <script src="{{asset('js/core.min.js')}}"></script>
     <script src="{{asset('js/script.js')}}"></script>
     <script src="{{asset('js/revolution.min.js')}}"></script>
+    <div id="fb-root"></div>
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/es_ES/sdk.js#xfbml=1&version=v16.0&appId=442371417264737&autoLogAppEvents=1" nonce="74umaDRq"></script>
   </body>
 </html>

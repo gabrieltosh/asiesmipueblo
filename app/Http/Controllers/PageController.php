@@ -18,4 +18,7 @@ class PageController extends Controller
     public function handleGetCampaign(){
         return view('pages.campaign');
     }
+    public function handleGetDetailCampaign(){
+        return view('pages.detail-campaign');
+    }
 }

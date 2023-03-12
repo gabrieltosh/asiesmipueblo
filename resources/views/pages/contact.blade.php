@@ -24,7 +24,7 @@
                                     <a target="_blank" href="https://wa.me/59177500190?text=Hola!!%20necesito%20informacion%20acerca%20del%20programa" class="btn btn-xs btn-primary btn-icon btn-icon-left"><span class="icon novi-icon mdi mdi-whatsapp"></span>+591 77500190</a>
                                   </p>
                                   <p class="h6 text-uppercase font-weight-bold text-picton-blue letter-space-none offset-top-none">Correo</p>
-                                  <p><a href="mailto:contacto@asiesmipueblo.com.bo">contacto@asiesmipueblo.com.bo</a></p>
+                                  <p><a href="mailto:asiesmipueblo2025@gmail.com">asiesmipueblo2025@gmail.com</a></p>
                                 </address>
                             </div>
                             <div class="col-lg-6 col-xxl-6 offset-md-top-66">
@@ -49,7 +49,7 @@
                                             </div>
                                             <div class="group offset-top-30">
                                                 <div class="group-item element-fullwidth">
-                                                    <button class="btn btn-block btn-deluge" type="submit">Enviar</button>
+                                                    <button style="background-color: #2364AA;border-color: #2364AA" class="btn btn-block btn-info" type="submit">Enviar</button>
                                                 </div>
                                             </div>
                                         </form>
