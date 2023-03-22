@@ -1,7 +1,7 @@
 @extends('layouts.layout')
 
 @section('content')
-    <!--<section class="section novi-background section-98 section-sm-110">
+    <section class="section novi-background section-20 section-sm-41">
             <div class="container">
                 <h2>Eliser Nemesio Roca Tancara</h2>
                 <h3><strong>Licenciado en Comunicación Social</strong></h3>
@@ -36,72 +36,8 @@
                     </div>
                 </section>
             </div>
-        </section>-->
-    <section
-        class="section novi-background section-top-98 section-sm-top-110 section-sm-bottom-110 section-lg-top-66 section-bottom-98 section-lg-bottom-0 ">
-        <div class="container">
-            <div class="row justify-content-md-center align-items-lg-center">
-                <div class="col-xl-5 d-none d-xl-inline-block"><img class="img-fluid" width="350" height="500"
-                        src="{{ asset('assets/images/about_me_3.png') }}" alt=""></div>
-                <div class="col-md-10 col-xl-5 section-lg-bottom-50">
-                    <h2>Eliser Nemesio Roca Tancara</h2>
-                    <h3><strong>Licenciado en Comunicación Social</strong></h3>
-                    <hr class="divider bg-mantis">
-                    <div class="offset-top-66 offset-xl-top-50">
-                        <!-- Icon Box Type 2-->
-                        <div class="unit unit-sm flex-md-row text-md-left">
-                            <div class="unit-left"><span class="icon novi-icon text-gray mdi mdi-monitor"></span></div>
-                            <div class="unit-body">
-
-                                <p>Director y conductor del programa independiente de televisión, Así Es mi Pueblo, que se
-                                    emite
-                                    por Canal 57.1 CVC, Tele Estrella y redes sociales, desde la ciudad de El Alto –
-                                    Bolivia.
-                                </p>
-                            </div>
-                        </div>
-                        <div class="offset-top-66 offset-xl-top-34">
-                            <!-- Icon Box Type 2-->
-                            <div class="unit unit-sm flex-md-row text-md-left">
-                                <div class="unit-left"><span class="icon novi-icon text-gray mdi mdi-newspaper"></span>
-                                </div>
-                                <div class="unit-body">
-
-                                    <p>Desde hace más de 10 años demostró su vocación de ayuda solidaria al prójimo, a
-                                        través de una
-                                        labor de investigación periodística visibilizó a centenares de familias en extrema
-                                        pobreza,
-                                        por las que realizó masivas campañas, mismas que tuvieron amplia repercusión a nivel
-                                        nacional e internacional. </p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="offset-top-66 offset-xl-top-34">
-                            <!-- Icon Box Type 2-->
-                            <div class="unit unit-sm flex-md-row text-md-left">
-                                <div class="unit-left"><span class="icon novi-icon text-gray mdi mdi-newspaper"></span>
-                                </div>
-                                <div class="unit-body">
-
-                                    <p>Desarrolló su labor periodística principalmente en la ciudad de El Alto, desde el año
-                                        1992
-                                        hasta la fecha (31 años), empezó como locutor del programa Amanecer Tricolor que se
-                                        difundió
-                                        en cadena a través de las radios Altiplano, Emisoras Unidas y Continental. Fue
-                                        camarógrafo,
-                                        editor, periodista y codirector de la Red Paceña de Comunicaciones y Transmisiones
-                                        Tricolor.
-                                        Trabajo como encargado de relaciones públicas y prensa, jefe de Unidad y Director de
-                                        Comunicación en diferentes instituciones públicas de Bolivia. </p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="section novi-background section-98 section-sm-110">
+        </section>
+    <section class="section novi-background section-20 section-sm-41">
         <div class="container">
             <h1>Nuestro Equipo</h1>
             <hr class="divider" style="background-color: #2364AA;">
