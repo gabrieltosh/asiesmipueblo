@@ -17,8 +17,9 @@ class CreateDetailCampaignsTable extends Migration
             $table->id();
             $table->string('title');
             $table->enum('type',['video','image']);
-            $table->string('resource_name');
+            $table->text('resource_name');
             $table->date('campaign_date');
+            $table->integer('views')->nullable();
             $table->bigInteger('section_id')->unsigned();
             $table->bigInteger('campaign_id')->unsigned();
             $table->text('description');

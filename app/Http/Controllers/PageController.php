@@ -3,7 +3,7 @@
 namespace App\Http\Controllers;
 
 use Illuminate\Http\Request;
-
+use App\Models\DetailCampaign;
 class PageController extends Controller
 {
     public function HandleGetHome(){
@@ -16,9 +16,15 @@ class PageController extends Controller
         return view('pages.contact');
     }
     public function handleGetCampaign(){
-        return view('pages.campaign');
+        $campaigns=DetailCampaign::with('section')->select('id','views','title','type','resource_name','campaign_date','campaign_id','section_id')->orderBy('campaign_date','desc')->get();
+        return view('pages.campaign',compact('campaigns'));
     }
-    public function handleGetDetailCampaign(){
-        return view('pages.detail-campaign');
+    public function handleGetDetailCampaign($campaign_id,$detail_id){
+        $campaign=DetailCampaign::where('id',$detail_id)->first();
+        DetailCampaign::findOrFail($detail_id)->fill([
+            'views'=>(int)$campaign->views+1
+        ])->save();
+        $campaigns=DetailCampaign::with('section','files')->where('campaign_id',$campaign_id)->get();
+        return view('pages.detail-campaign',compact('campaigns','detail_id'));
     }
 }

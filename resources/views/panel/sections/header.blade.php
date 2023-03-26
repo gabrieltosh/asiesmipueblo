@@ -187,7 +187,7 @@
             </a>
           </li>
           <li class="nav-item">
-            <a href="pages/gallery.html" class="nav-link">
+            <a href="{{route('campaign.index')}}" class="nav-link {{request()->is('panel/campaign*')?'active':''}}">
               <i class="nav-icon far fa-image"></i>
               <p>
                 Campañas

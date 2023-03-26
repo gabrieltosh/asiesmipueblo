@@ -5,6 +5,7 @@ use App\Http\Controllers\PageController;
 use App\Http\Controllers\Panel\LoginController;
 use App\Http\Controllers\Panel\PanelController;
 use App\Http\Controllers\Panel\SectionCampaignController;
+use App\Http\Controllers\Panel\CampaignController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -17,10 +18,10 @@ use App\Http\Controllers\Panel\SectionCampaignController;
 */
 
 Route::get('/',[PageController::class,'HandleGetHome'])->name('home_page');
+Route::get('campaign/{campaign_id}/detail/{detail_id}',[PageController::class,'handleGetDetailCampaign'])->name('campaign_page.detail');
 Route::get('campaign',[PageController::class,'HandleGetCampaign'])->name('campaign_page');
 Route::get('about_us',[PageController::class,'HandleGetAboutUs'])->name('about_us_page');
 Route::get('contact',[PageController::class,'HandleGetContact'])->name('contact_page');
-Route::get('detail-campaign',[PageController::class,'handleGetDetailCampaign'])->name('detail-campaign');
 
 Route::post('panel/section_campaign/store',[SectionCampaignController::class,'HandleStoreSection'])->name('section_campaign.store');
 Route::get('panel/section_campaign/create',[SectionCampaignController::class,'HandleCreateSection'])->name('section_campaign.create');
@@ -29,7 +30,21 @@ Route::get('panel/section_campaign/{id}/delete',[SectionCampaignController::clas
 Route::get('panel/section_campaign/{id}/edit',[SectionCampaignController::class,'HandleEditSection'])->name('section_campaign.edit');
 Route::get('panel/section_campaign',[SectionCampaignController::class,'HandleViewSectionCampaign'])->name('section_campaign.index');
 
-
+Route::get('panel/campaign',[CampaignController::class,'HandleIndexCampaign'])->name('campaign.index');
+Route::get('panel/campaign/create',[CampaignController::class,'HandleCreateCampaign'])->name('campaign.create');
+Route::post('panel/campaign/store',[CampaignController::class,'HandleStoreCampaign'])->name('campaign.store');
+Route::get('panel/campaign/{id}/edit',[CampaignController::class,'HandleEditCampaign'])->name('campaign.edit');
+Route::get('panel/campaign/{id}/delete',[CampaignController::class,'HandleDeleteCampaign'])->name('campaign.delete');
+Route::put('panel/campaign/{id}/update',[CampaignController::class,'HandleUpdateCampaign'])->name('campaign.update');
+Route::get('panel/campaign/{id}/detail',[CampaignController::class,'HandleIndexDetail'])->name('campaign.detail.index');
+Route::post('panel/campaign/detail/store',[CampaignController::class,'HandleStoreDetail'])->name('campaign.detail.store');
+Route::put('panel/campaign/detail/{detail_id}/update',[CampaignController::class,'HandleUpdateDetail'])->name('campaign.detail.update');
+Route::get('panel/campaign/{campaign_id}/detail/create',[CampaignController::class,'HandleCreateDetail'])->name('campaign.detail.create');
+Route::get('panel/campaign/{campaign_id}/detail/{detail_id}/delete',[CampaignController::class,'HandleDeleteDetail'])->name('campaign.detail.delete');
+Route::get('panel/campaign/{campaign_id}/detail/{detail_id}/files',[CampaignController::class,'HandleFilesDetail'])->name('campaign.detail.files');
+Route::post('panel/campaign/{campaign_id}/detail/{detail_id}/files',[CampaignController::class,'HandleStoreFileDetail'])->name('campaign.detail.files_store');
+Route::get('panel/campaign/{campaign_id}/detail/{detail_id}/edit',[CampaignController::class,'HandleEditDetail'])->name('campaign.detail.edit');
+Route::get('panel/campaign/{campaign_id}/detail/{detail_id}/files/{file_id}',[CampaignController::class,'HandleDeleteFileDetail'])->name('campaign.detail.files_delete');
 
 Route::get('login',[LoginController::class,'HandleViewLogin'])->name('login');
 Route::get('panel',[PanelController::class,'HandleViewPanel'])->name('panel');

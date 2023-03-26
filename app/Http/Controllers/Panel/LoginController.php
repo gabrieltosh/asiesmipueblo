@@ -14,7 +14,6 @@ class LoginController extends Controller
         if(Auth::attempt(['email' => $request->email, 'password' => $request->password])){
             return redirect()->route('panel');
         }
-
         return redirect()->back()->withInput();
     }
 }
