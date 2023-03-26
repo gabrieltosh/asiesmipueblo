@@ -19,7 +19,19 @@ class UserSeed extends Seeder
                 'lastname'=>'Pinto',
                 'email'=>'gpinto.personal@gmail.com',
                 'password'=>\Hash::make('123456')
-            ]
+            ],
+            [
+                'name'=>'Admin',
+                'lastname'=>'Admin',
+                'email'=>'admin@gmail.com',
+                'password'=>\Hash::make('123456')
+            ],
+            [
+                'name'=>'Marcos',
+                'lastname'=>'Flores',
+                'email'=>'marcos.flores.r@gmail.com',
+                'password'=>\Hash::make('123456')
+            ],
         );
         User::insert($data);
     }
