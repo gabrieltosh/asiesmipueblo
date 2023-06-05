@@ -4,6 +4,7 @@
     <section class="section novi-background section-20 section-md-top-41">
         <div class="container">
             <div class="row justify-content-md-center text-left">
+                <div class="col-md-2">hola</div>
                 <div class="col-md-8 col-lg-10">
                     <!-- Bootstrap Accordion-->
                     <div class="offset-top-0" role="tablist" aria-multiselectable="true" id="accordion-1">

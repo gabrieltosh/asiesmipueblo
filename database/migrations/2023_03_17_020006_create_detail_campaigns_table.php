@@ -22,7 +22,7 @@ class CreateDetailCampaignsTable extends Migration
             $table->integer('views')->nullable();
             $table->bigInteger('section_id')->unsigned();
             $table->bigInteger('campaign_id')->unsigned();
-            $table->text('description');
+            $table->longText('description');
             $table->foreign('section_id')->references('id')->on('section_campaigns');
             $table->foreign('campaign_id')->references('id')->on('campaigns');
             $table->timestamps();

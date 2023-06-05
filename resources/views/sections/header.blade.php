@@ -7,18 +7,23 @@
             <div class="rd-navbar-inner">
                 <div class="container">
                     <div class="rd-navbar-top-block row justify-content-xl-center align-items-xl-center">
-                        <div class="col-xl-3">
-                            <p class="d-none d-xl-block">Llamanos: <span class="novi-icon mdi mdi-phone"></span> <a
-                                    href="tel:#">+591 77500190 </a></p>
+                        <div class="col-xl-3 text-center">
+                            <a href="https://www.facebook.com/asiesmipueblo2025" target="_blank"
+                                style="background-color: #0165E1;color:white;"
+                                class="btn btn-xs btn-icon btn-icon-left"><span
+                                    class="icon novi-icon mdi mdi-facebook"></span>Asi es mi pueblo</a>
                         </div>
                         <div class="col-xl-6 text-center">
                             <!--Navbar Brand-->
                             <div class="rd-navbar-brand"><a href="index.html"><img
                                         style='margin-top: -5px;margin-left: -15px;' width='280' height='50'
-                                        src='{{asset("assets/images/logo_h_1.png")}}' alt='' /></a></div>
+                                        src='{{ asset('assets/images/logo_h_1.png') }}' alt='' /></a></div>
                         </div>
                         <div class="col-xl-3 text-center">
-                            <a href="https://www.facebook.com/asiesmipueblo2025" target="_blank" style="background-color: #0165E1;color:white;" class="btn btn-xs btn-icon btn-icon-left"><span class="icon novi-icon mdi mdi-facebook"></span>Asi es mi pueblo</a>
+                                <a href="https://www.facebook.com/asiesmipueblo2025" target="_blank"
+                                    style="background-color: red;color:white;"
+                                    class="btn btn-xs btn-icon btn-icon-left"><span
+                                        class="icon novi-icon mdi mdi-access-point"></span>En Vivo</a>
                         </div>
                     </div>
                     <!-- RD Navbar Panel-->
@@ -27,8 +32,8 @@
                         <button class="rd-navbar-toggle"
                             data-rd-navbar-toggle=".rd-navbar, .rd-navbar-nav-wrap"><span></span></button>
                         <!-- RD Navbar Top Panel Toggle-->
-                        <a href="https://www.facebook.com/asiesmipueblo2025" target="_blank" class="rd-navbar-search-toggle"
-                            ><span class="icon novi-icon mdi mdi-facebook"></span></a>
+                        <a href="https://www.facebook.com/asiesmipueblo2025" target="_blank"
+                            class="rd-navbar-search-toggle"><span class="icon novi-icon mdi mdi-facebook"></span></a>
 
                     </div>
                 </div>
@@ -39,16 +44,26 @@
                                 <!--Navbar Brand Mobile-->
                                 <div class="rd-navbar-mobile-brand"><a href="index.html"><img
                                             style='margin-top: -5px;margin-left: -15px;' width='190' height='150'
-                                            src='{{asset("assets/images/logo_v.png")}}' alt='' /></a></div>
+                                            src='{{ asset('assets/images/logo_v.png') }}' alt='' /></a></div>
                                 <!-- RD Navbar Nav-->
                                 <ul class="rd-navbar-nav">
-                                    <li class="{{request()->is('/')?'active':''}}"><a href="{{route('home_page')}}"><span>Inicio</span></a>
+                                    <li class="{{ request()->is('/') ? 'active' : '' }}"><a
+                                            href="{{ route('home_page') }}"><span>Inicio</span></a>
                                     </li>
-                                    <li class="{{request()->is('campaign')?'active':''}}"><a href="{{route('campaign_page')}}"><span>Campañas</span></a>
+                                    <li class="{{ request()->is('campaign') ? 'active' : '' }}"><a
+                                            href="{{ route('campaign_page') }}"><span>Lo Ultimo</span></a>
                                     </li>
-                                    <li class="{{request()->is('about_us')?'active':''}}"><a href="{{route('about_us_page')}}"><span>Nosotros</span></a>
+                                    <li class="{{ request()->is('campaign') ? 'active' : '' }}"><a
+                                            href="{{ route('campaign_page') }}"><span>Lo mas Destacado</span></a>
                                     </li>
-                                    <li class="{{request()->is('contact')?'active':''}}"><a href="{{route('contact_page')}}"><span>Contactanos</span></a>
+                                    <li class="{{ request()->is('campaign') ? 'active' : '' }}"><a
+                                            href="{{ route('campaign_page') }}"><span>Campañas</span></a>
+                                    </li>
+                                    <li class="{{ request()->is('about_us') ? 'active' : '' }}"><a
+                                            href="{{ route('about_us_page') }}"><span>Nosotros</span></a>
+                                    </li>
+                                    <li class="{{ request()->is('contact') ? 'active' : '' }}"><a
+                                            href="{{ route('contact_page') }}"><span>Contactanos</span></a>
                                     </li>
                                     <!--request()->is('sites/*/edit')-->
                                 </ul>

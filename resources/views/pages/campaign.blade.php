@@ -5,6 +5,7 @@
         <div class="container">
             <div class="row justify-content-sm-center">
                 @foreach ($campaigns as $campaign)
+                    <div class="col-md-2">hola</div>
                     <div class="col-xl-8">
                         <!-- Blog Default Single-->
                         <section>
@@ -64,6 +65,7 @@
                             <hr class="hr offset-top-36">
                         </section>
                     </div>
+                    <div class="col-md-2">hola</div>
                 @endforeach
             </div>
         </div>
