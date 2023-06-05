@@ -36,7 +36,7 @@
                 <div class="card-body">
                   <div class="form-group">
                     <label for="exampleInputEmail1">Nombre</label>
-                    <input type="text" class="form-control" name="name" placeholder="Nombre Seccion" required>
+                    <input type="text" class="form-control" name="name" placeholder="Nombre Grupo Campañas" required>
                   </div>
                 </div>
                 <!-- /.card-body -->

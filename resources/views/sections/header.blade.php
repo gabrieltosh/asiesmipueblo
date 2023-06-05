@@ -34,7 +34,6 @@
                         <!-- RD Navbar Top Panel Toggle-->
                         <a href="https://www.facebook.com/asiesmipueblo2025" target="_blank"
                             class="rd-navbar-search-toggle"><span class="icon novi-icon mdi mdi-facebook"></span></a>
-
                     </div>
                 </div>
                 <div class="rd-navbar-menu-wrap">
@@ -50,10 +49,10 @@
                                     <li class="{{ request()->is('/') ? 'active' : '' }}"><a
                                             href="{{ route('home_page') }}"><span>Inicio</span></a>
                                     </li>
-                                    <li class="{{ request()->is('campaign') ? 'active' : '' }}"><a
+                                    <li class="{{ request()->is('campai') ? 'active' : '' }}"><a
                                             href="{{ route('campaign_page') }}"><span>Lo Ultimo</span></a>
                                     </li>
-                                    <li class="{{ request()->is('campaign') ? 'active' : '' }}"><a
+                                    <li class="{{ request()->is('campaig') ? 'active' : '' }}"><a
                                             href="{{ route('campaign_page') }}"><span>Lo mas Destacado</span></a>
                                     </li>
                                     <li class="{{ request()->is('campaign') ? 'active' : '' }}"><a

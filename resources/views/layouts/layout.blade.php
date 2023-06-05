@@ -13,15 +13,16 @@
     <link rel="stylesheet" href="{{ asset('css/style.css') }}">
     <style>
         .carousel-caption {
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            height: 100%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
             text-align: center;
+            width: 70%;
         }
 
-        .carousel-caption h3,
-        .carousel-caption p {
+        .carousel-caption h1,
+        .carousel-caption h4 {
             margin: 0;
         }
 
@@ -35,9 +36,12 @@
             }
         }
 
-        .carousel-item {
+        .carousel-item img {
             animation: zoomOut 10s infinite alternate;
-            width: 100% ;
+        }
+
+        .carousel-item {
+            width: 100%;
             height: 100%;
         }
 
@@ -52,12 +56,27 @@
             margin: 0 auto;
             /* Centrar horizontalmente el carrusel */
         }
-        .custom-carousel img {
-  object-fit: cover;
-  height: 100%;
-  width: 100%;
-}
 
+        .custom-carousel img {
+            object-fit: cover;
+            height: 100%;
+            width: 100%;
+        }
+
+        @media (max-width: 767px) {
+            .carousel-caption h1 {
+                font-size: 24px;
+            }
+
+            .carousel-caption h4 {
+                font-size: 16px;
+            }
+        }
+
+        .modal {
+            z-index: 2020;
+            /* Asegúrate de que el z-index sea mayor que otros elementos de la página */
+        }
     </style>
 </head>
 

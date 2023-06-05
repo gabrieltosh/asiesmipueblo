@@ -1,8 +1,8 @@
 @extends('layouts.layout')
 
 @section('content')
-    <div class="row justify-content-sm-center" style="margin-top: 0px !important">
-        <div class="col-md-10">
+    <div class="row justify-content-sm-center" style="margin:5px 0px !important;">
+        <div class="col-md-10" style="padding:0px;">
             <img src="{{ asset('assets/images/publicidad2.gif') }}" alt="" width="100%">
         </div>
     </div>
@@ -57,8 +57,8 @@
         </div>
     </div>
 
-    <div class="row justify-content-sm-center" style="margin-top: 0px !important">
-        <div class="col-md-10">
+    <div class="row justify-content-sm-center" style="margin:5px 0px !important;">
+        <div class="col-md-10" style="padding:0px;">
             <img src="{{ asset('assets/images/publicidad1.png') }}" alt="" width="100%">
         </div>
     </div>
@@ -120,7 +120,7 @@
     </section>
     <div class="modal fade show" id="exampleModalCenter" tabindex="-1" role="dialog"
         aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-        <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-dialog modal-dialog-centered modal-md" role="document" >
             <div class="modal-content">
                 <div class=" position-relative">
                     <button type="button" class="close position-absolute  rounded-circle" data-dismiss="modal"
@@ -132,6 +132,7 @@
             </div>
         </div>
     </div>
+
 @endsection
 @section('script')
     <script type="text/javascript">
