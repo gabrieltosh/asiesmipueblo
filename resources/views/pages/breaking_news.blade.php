@@ -5,13 +5,13 @@
         <div class="container">
             <div class="row justify-content-sm-center" style="margin-top: 0px !important;margin-bottom: 10px;">
                 <div class="col-md-12">
-                    <img src="{{ asset('assets/images/publicidad2.gif') }}" alt="" width="100%">
+                    <img src="{{ asset('assets/images/publicidad2.gif') }}" alt="" width="100%" style="border-radius: 5px !important;">
                 </div>
             </div>
             <div class="row justify-content-sm-center" style="margin-top: 0px !important">
                 <div class="col-md-2 d-none d-md-block">
-                    <img src="{{ asset('assets/images/publicidad9.jpg') }}" alt="" width="100%" style="margin-bottom: 10px">
-                    <img src="{{ asset('assets/images/publicidad9.jpg') }}" alt="" width="100%" style="margin-bottom: 10px">
+                    <img src="{{ asset('assets/images/publicidad9.jpg') }}" alt="" width="100%" style="margin-bottom: 10px;border-radius: 5px !important;">
+                    <img src="{{ asset('assets/images/publicidad9.jpg') }}" alt="" width="100%" style="margin-bottom: 10px;border-radius: 5px !important;">
                 </div>
                 <div class="col-md-8">
                     <div class="row justify-content-sm-center" style="margin-top:0px !important">
@@ -79,8 +79,8 @@
                     </div>
                 </div>
                 <div class="col-md-2 d-none d-md-block">
-                    <img src="{{ asset('assets/images/publicidad9.jpg') }}" alt="" width="100%" style="margin-bottom: 10px">
-                    <img src="{{ asset('assets/images/publicidad9.jpg') }}" alt="" width="100%" style="margin-bottom: 10px">
+                    <img src="{{ asset('assets/images/publicidad9.jpg') }}" alt="" width="100%" style="margin-bottom: 10px;border-radius: 5px !important;">
+                    <img src="{{ asset('assets/images/publicidad9.jpg') }}" alt="" width="100%" style="margin-bottom: 10px;border-radius: 5px !important;">
                 </div>
             </div>
 

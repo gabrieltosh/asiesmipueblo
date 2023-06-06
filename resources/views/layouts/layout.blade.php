@@ -62,7 +62,10 @@
             height: 100%;
             width: 100%;
         }
-
+        .img-layout{
+                width: 45px;
+                height: 45px;
+            }
         @media (max-width: 767px) {
             .carousel-caption h1 {
                 font-size: 24px;
@@ -70,6 +73,10 @@
 
             .carousel-caption h4 {
                 font-size: 16px;
+            }
+            .img-layout{
+                width: 40px;
+                height: 40px;
             }
         }
 

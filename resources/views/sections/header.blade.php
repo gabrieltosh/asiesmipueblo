@@ -21,7 +21,7 @@
                         </div>
                         <div class="col-xl-3 col-xl-3 text-center">
                                 <a href="https://www.facebook.com/asiesmipueblo2025" target="_blank"
-                                    style="background-color: red;color:white;"
+                                    style="background-color: red;color:white; width: 150px"
                                     class="btn btn-xs btn-icon btn-icon-left d-none d-xl-block"><span
                                         class="icon novi-icon mdi mdi-access-point"></span>En Vivo</a>
                         </div>
