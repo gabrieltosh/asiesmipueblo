@@ -6,6 +6,7 @@ use App\Http\Controllers\Panel\LoginController;
 use App\Http\Controllers\Panel\PanelController;
 use App\Http\Controllers\Panel\SectionCampaignController;
 use App\Http\Controllers\Panel\CampaignController;
+use App\Http\Controllers\Panel\NewsController;
 /*
 |--------------------------------------------------------------------------
 | Web Routes
@@ -18,8 +19,10 @@ use App\Http\Controllers\Panel\CampaignController;
 */
 
 Route::get('/',[PageController::class,'HandleGetHome'])->name('home_page');
-Route::get('campaign/{campaign_id}/detail/{detail_id}',[PageController::class,'handleGetDetailCampaign'])->name('campaign_page.detail');
+Route::get('campaign/{campaign_id}/detail/{detail_id}',[PageController::class,'HandleGetDetailCampaign'])->name('campaign_page.detail');
 Route::get('campaign',[PageController::class,'HandleGetCampaign'])->name('campaign_page');
+Route::get('news/{news_id}',[PageController::class,'HandleDetailNews'])->name('news.detail');
+Route::get('breaking_news',[PageController::class,'HandleGetBreakingNews'])->name('breaking_news');
 Route::get('about_us',[PageController::class,'HandleGetAboutUs'])->name('about_us_page');
 Route::get('contact',[PageController::class,'HandleGetContact'])->name('contact_page');
 
@@ -45,6 +48,10 @@ Route::get('panel/campaign/{campaign_id}/detail/{detail_id}/files',[CampaignCont
 Route::post('panel/campaign/{campaign_id}/detail/{detail_id}/files',[CampaignController::class,'HandleStoreFileDetail'])->name('campaign.detail.files_store');
 Route::get('panel/campaign/{campaign_id}/detail/{detail_id}/edit',[CampaignController::class,'HandleEditDetail'])->name('campaign.detail.edit');
 Route::get('panel/campaign/{campaign_id}/detail/{detail_id}/files/{file_id}',[CampaignController::class,'HandleDeleteFileDetail'])->name('campaign.detail.files_delete');
+
+
+Route::get('panel/news',[NewsController::class,'HandleIndexNews'])->name('news.index');
+
 
 Route::get('login',[LoginController::class,'HandleViewLogin'])->name('login');
 Route::get('panel',[PanelController::class,'HandleViewPanel'])->name('panel');

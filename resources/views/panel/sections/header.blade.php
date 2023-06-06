@@ -194,6 +194,14 @@
               </p>
             </a>
           </li>
+          <li class="nav-item">
+            <a href="{{route('news.index')}}" class="nav-link {{request()->is('panel/news*')?'active':''}}">
+              <i class="nav-icon far fa-image"></i>
+              <p>
+                Noticias
+              </p>
+            </a>
+          </li>
         </ul>
       </nav>
       <!-- /.sidebar-menu -->

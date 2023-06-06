@@ -7,22 +7,22 @@
             <div class="rd-navbar-inner">
                 <div class="container">
                     <div class="rd-navbar-top-block row justify-content-xl-center align-items-xl-center">
-                        <div class="col-xl-3 text-center">
+                        <div class="col-xs-3 col-xl-3 text-center">
                             <a href="https://www.facebook.com/asiesmipueblo2025" target="_blank"
                                 style="background-color: #0165E1;color:white;"
                                 class="btn btn-xs btn-icon btn-icon-left"><span
                                     class="icon novi-icon mdi mdi-facebook"></span>Asi es mi pueblo</a>
                         </div>
-                        <div class="col-xl-6 text-center">
+                        <div class="col-xs-3 col-xl-6 text-center">
                             <!--Navbar Brand-->
                             <div class="rd-navbar-brand"><a href="index.html"><img
                                         style='margin-top: -5px;margin-left: -15px;' width='280' height='50'
                                         src='{{ asset('assets/images/logo_h_1.png') }}' alt='' /></a></div>
                         </div>
-                        <div class="col-xl-3 text-center">
+                        <div class="col-xl-3 col-xl-3 text-center">
                                 <a href="https://www.facebook.com/asiesmipueblo2025" target="_blank"
                                     style="background-color: red;color:white;"
-                                    class="btn btn-xs btn-icon btn-icon-left"><span
+                                    class="btn btn-xs btn-icon btn-icon-left d-none d-xl-block"><span
                                         class="icon novi-icon mdi mdi-access-point"></span>En Vivo</a>
                         </div>
                     </div>
@@ -32,8 +32,14 @@
                         <button class="rd-navbar-toggle"
                             data-rd-navbar-toggle=".rd-navbar, .rd-navbar-nav-wrap"><span></span></button>
                         <!-- RD Navbar Top Panel Toggle-->
-                        <a href="https://www.facebook.com/asiesmipueblo2025" target="_blank"
-                            class="rd-navbar-search-toggle"><span class="icon novi-icon mdi mdi-facebook"></span></a>
+                        <div>
+                            <!--<a href="https://www.facebook.com/asiesmipueblo2025" target="_blank"
+                            style="background-color: red;color:white; position: fixed; left:35%; top:10px "
+                            class="btn btn-xs btn-icon btn-icon-left "><span
+                                class="icon novi-icon mdi mdi-access-point"></span>En Vivo</a>-->
+                            <a href="https://www.facebook.com/asiesmipueblo2025" target="_blank"
+                            class="rd-navbar-search-toggle"><span class="icon novi-icon mdi mdi-access-point" style="color:red;"></span></a>
+                        </div>
                     </div>
                 </div>
                 <div class="rd-navbar-menu-wrap">
@@ -50,7 +56,7 @@
                                             href="{{ route('home_page') }}"><span>Inicio</span></a>
                                     </li>
                                     <li class="{{ request()->is('campai') ? 'active' : '' }}"><a
-                                            href="{{ route('campaign_page') }}"><span>Lo Ultimo</span></a>
+                                            href="{{ route('breaking_news') }}"><span>Lo Ultimo</span></a>
                                     </li>
                                     <li class="{{ request()->is('campaig') ? 'active' : '' }}"><a
                                             href="{{ route('campaign_page') }}"><span>Lo mas Destacado</span></a>

@@ -15,7 +15,7 @@
                 </div>
                 <div class="col-md-8">
                     <div class="row justify-content-sm-center" style="margin-top:0px !important">
-                        @foreach ($campaigns as $campaign)
+                        @foreach ($news as $new)
                             <div class="col-xl-12" >
                                 <!-- Blog Default Single-->
                                 <section>
@@ -30,34 +30,34 @@
                                                     <li class="list-inline-item"><span
                                                             class="text-middle icon-xxs novi-icon text-picton-blue mdi mdi-timer"></span>
                                                         <time class="text-middle small"
-                                                            datetime="{{ $campaign->campaign_date }}">{{ $campaign->campaign_date_humans }}</time>
+                                                            datetime="{{ $new->new_date }}">{{ $new->new_date_humans }}</time>
                                                     </li>
                                                     <li class="list-inline-item">
                                                         <span
-                                                            class="text-middle icon-xxs novi-icon text-picton-blue mdi mdi-eye">&nbsp;</span>{{$campaign->views}}<span>&nbsp;Vistas</span>
+                                                            class="text-middle icon-xxs novi-icon text-picton-blue mdi mdi-eye">&nbsp;</span>{{$new->views}}<span>&nbsp;Vistas</span>
                                                     </li>
                                                     <li class="list-inline-item">
-                                                        <span class="text-middle icon-xxs novi-icon text-picton-blue mdi mdi-view-list">&nbsp;</span><span>&nbsp;{{$campaign->section->name}}</span>
+                                                        <span class="text-middle icon-xxs novi-icon text-picton-blue mdi mdi-view-list">&nbsp;</span><span>&nbsp;{{$new->section->name}}</span>
                                                     </li>
                                                 </ul>
                                                 <!-- Post Meta-->
                                                 <h3 class="post-title"><a
-                                                        href="{{ route('campaign_page.detail',[$campaign->campaign_id, $campaign->id]) }}">{{ $campaign->title }}</a>
+                                                        href="{{ route('new_page.detail',[$new->new_id, $new->id]) }}">{{ $new->title }}</a>
                                                 </h3>
                                                 <!-- Post Media-->
                                                 <div class="post-media offset-top-10">
                                                     <header class="post-media">
-                                                        @if ($campaign->type === 'video')
+                                                        @if ($new->type === 'video')
                                                             <div class="embed-responsive embed-responsive-16by9">
-                                                                {!! $campaign->resource_name !!}
+                                                                {!! $new->resource_name !!}
                                                             </div>
                                                         @endif
-                                                        @if ($campaign->type === 'image')
+                                                        @if ($new->type === 'image')
                                                             <div data-lightgallery="group"><a class="thumbnail-classic"
-                                                                    href="{{ route('campaign_page.detail',[$campaign->campaign_id,$campaign->id]) }}"
+                                                                    href="{{ route('news.detail',[$new->new_id,$new->id]) }}"
                                                                     target="_self">
                                                                     <figure><img width="570" height="200"
-                                                                            src="{{ asset('assets/images/campaign/' . $campaign->resource_name) }}"
+                                                                            src="{{ asset('assets/images/new/' . $new->resource_name) }}"
                                                                             alt="">
                                                                     </figure>
                                                                 </a>
@@ -68,7 +68,7 @@
                                             </div>
                                             <section class="post-content offset-top-31 text-right">
                                                 <a class="btn btn-default" style="margin-top:10px !important;"
-                                                    href="{{ route('campaign_page.detail', [$campaign->campaign_id, $campaign->id]) }}">Leer mas</a>
+                                                    href="{{ route('new_page.detail', [$new->new_id, $new->id]) }}">Leer mas</a>
                                             </section>
                                         </article>
                                     </div>
