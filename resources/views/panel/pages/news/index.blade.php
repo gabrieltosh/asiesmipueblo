@@ -10,7 +10,7 @@
                         <p style="font-size:20px"><strong>Noticias</strong></p>
                     </div>
                     <div class="col-sm-6">
-                        <a href="{{route('campaign.create')}}" style="width: 100px" type="button" class="btn btn-block btn-primary btn-sm float-right">Crear</a>
+                        <a href="{{route('news.create')}}" style="width: 100px" type="button" class="btn btn-block btn-primary btn-sm float-right">Crear</a>
                     </div>
                 </div>
             </div><!-- /.container-fluid -->

@@ -62,10 +62,12 @@
             height: 100%;
             width: 100%;
         }
-        .img-layout{
-                width: 45px;
-                height: 45px;
-            }
+
+        .img-layout {
+            width: 75px;
+            height: 75px;
+        }
+
         @media (max-width: 767px) {
             .carousel-caption h1 {
                 font-size: 24px;
@@ -74,7 +76,8 @@
             .carousel-caption h4 {
                 font-size: 16px;
             }
-            .img-layout{
+
+            .img-layout {
                 width: 40px;
                 height: 40px;
             }
@@ -83,6 +86,46 @@
         .modal {
             z-index: 2020;
             /* Asegúrate de que el z-index sea mayor que otros elementos de la página */
+        }
+
+        #botonZoom {
+            animation: zoomAnimacion 1s ease infinite alternate !important;
+            transform-style: preserve-3d !important;
+            animation-timing-function: ease;
+        }
+
+        @keyframes zoomAnimacion {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.15);
+            }
+
+            100% {
+                transform: scale(1);
+            }
+        }
+
+        #botonZoom2 {
+            animation: zoomAnimacion2 1.5s ease infinite alternate !important;
+            transform-style: preserve-3d !important;
+            animation-timing-function: ease;
+        }
+
+        @keyframes zoomAnimacion2 {
+            0% {
+                transform: scale(1);
+            }
+
+            50% {
+                transform: scale(1.05);
+            }
+
+            100% {
+                transform: scale(1);
+            }
         }
     </style>
 </head>

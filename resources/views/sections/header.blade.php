@@ -15,16 +15,17 @@
                         </div>
                         <div class="col-xs-3 col-xl-6 text-center">
                             <!--Navbar Brand-->
-                            <div class="rd-navbar-brand"><a href="index.html"><img
-                                        style='margin-top: -5px;margin-left: -15px;' width='280' height='50'
+                            <div class="rd-navbar-brand" style="display:block !important;"><a href="index.html"><img
+                                        style='margin-top: -5px;margin-left: -15px; ' width='270' height='46'
                                         src='{{ asset('assets/images/logo_h_1.png') }}' alt='' /></a></div>
                         </div>
                         <div class="col-xl-3 col-xl-3 text-center">
                                 <a href="https://www.facebook.com/asiesmipueblo2025" target="_blank"
                                     style="background-color: red;color:white; width: 150px"
-                                    class="btn btn-xs btn-icon btn-icon-left d-none d-xl-block"><span
-                                        class="icon novi-icon mdi mdi-access-point"></span>En Vivo</a>
+                                    class="btn btn-xs btn-icon btn-icon-left d-none d-xl-block" id="botonZoom2" ><span
+                                        class="icon novi-icon mdi mdi-access-point" id="botonZoom" ></span>En Vivo</a>
                         </div>
+
                     </div>
                     <!-- RD Navbar Panel-->
                     <div class="rd-navbar-panel">
@@ -38,7 +39,9 @@
                             class="btn btn-xs btn-icon btn-icon-left "><span
                                 class="icon novi-icon mdi mdi-access-point"></span>En Vivo</a>-->
                             <a href="https://www.facebook.com/asiesmipueblo2025" target="_blank"
-                            class="rd-navbar-search-toggle"><span class="icon novi-icon mdi mdi-access-point" style="color:red;"></span></a>
+                            class="rd-navbar-search-toggle" style="right: 35px !important;"><span class="icon novi-icon mdi mdi-facebook" style="color:#0165E1;"></span></a>
+                            <a href="https://www.facebook.com/asiesmipueblo2025" target="_blank"
+                            class="rd-navbar-search-toggle" id="botonZoom" style="right: 0px !important;"><span class="icon novi-icon mdi mdi-access-point" style="color:red;"></span></a>
                         </div>
                     </div>
                 </div>

@@ -51,6 +51,8 @@ Route::get('panel/campaign/{campaign_id}/detail/{detail_id}/files/{file_id}',[Ca
 
 
 Route::get('panel/news',[NewsController::class,'HandleIndexNews'])->name('news.index');
+Route::get('panel/news/create',[NewsController::class,'HandleCreateNews'])->name('news.create');
+Route::post('panel/news/store',[NewsController::class,'HandleStoreNews'])->name('news.store');
 
 
 Route::get('login',[LoginController::class,'HandleViewLogin'])->name('login');

@@ -73,13 +73,20 @@
             </div>
 
             <div class="row justify-content-sm-center" style="margin:5px 0px !important;">
-                <div class="col-md-12" style="background-color: #191919; padding: 40px 0px; border-radius: 5px !important;">
+                <div class="col-md-12" style="background-color: #f5f5f5; padding: 40px 0px; border-radius: 5px !important;">
                     <div class="row justify-content-sm-center grid-group-md">
+                        <div class="col-md-12" >
+                            <h3>
+                                <strong>
+                                    LO MAS DESTACADO
+                                </strong>
+                            </h3>
+                        </div>
                         <div class="col-6 col-lg-3">
                             <!-- Counter type 2-->
                             <a href="{{ route('campaign_page') }}">
                                 <div class="counter-type-2">
-                                    <img src="{{ asset('assets/images/marketing.png') }}" alt="" class="img-layout">
+                                    <img src="{{ asset('assets/images/campaignss.png') }}" alt="" class="img-layout">
                                     <div class="offset-xxl-top-10" style="margin-top: 10px;">
                                         <div class="h6 text-uppercase text-spacing-60 font-weight-bold">NUEVA
                                             CAMPAÑA</div>
@@ -90,7 +97,7 @@
                         <div class="col-6 col-lg-3">
                             <!-- Counter type 2-->
                             <a href="{{ route('campaign_page') }}">
-                                <div class="counter-type-2"><img src="{{ asset('assets/images/newspaper4.png') }}"
+                                <div class="counter-type-2"><img src="{{ asset('assets/images/send.png') }}"
                                         alt="" class="img-layout">
                                     <div class="offset-xxl-top-10" style="margin-top: 10px;">
                                         <div class="h6 text-uppercase text-spacing-60 font-weight-bold">LO ULTIMO
@@ -102,7 +109,7 @@
                         <div class="col-6 col-lg-3">
                             <!-- Counter type 2-->
                             <a href="{{ route('campaign_page') }}">
-                                <div class="counter-type-2"><img src="{{ asset('assets/images/newspaper3.png') }}"
+                                <div class="counter-type-2"><img src="{{ asset('assets/images/up-left-arrow.png') }}"
                                         alt="" class="img-layout">
                                     <div class="offset-xxl-top-10" style="margin-top: 10px;">
                                         <div class="h6 text-uppercase text-spacing-60 font-weight-bold">LO MAS
@@ -115,7 +122,7 @@
                         <div class="col-6 col-lg-3">
                             <!-- Counter type 2-->
                             <a href="{{ route('campaign_page') }}">
-                                <div class="counter-type-2"><img src="{{ asset('assets/images/live.png') }}"
+                                <div class="counter-type-2"><img src="{{ asset('assets/images/video-camera.png') }}"
                                         alt="" class="img-layout">
                                     <div class="offset-xxl-top-10" style="margin-top: 10px;">
                                         <div class="h6 text-uppercase text-spacing-60 font-weight-bold">EN VIVO
