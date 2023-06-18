@@ -106,7 +106,7 @@
                     </div>
                 </div>
             </div>
-            <div class="col-md-2" style="padding:0px;">
+            <div class="col-md-2 d-none d-md-block" style="padding:0px;">
                 <img src="{{ asset('assets/images/publicidad9.jpg') }}" alt="" width="100%"
                     style="margin-bottom: 10px">
                 <img src="{{ asset('assets/images/publicidad9.jpg') }}" alt="" width="100%"
