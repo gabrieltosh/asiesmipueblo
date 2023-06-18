@@ -9,11 +9,7 @@
                 </div>
             </div>
             <div class="row justify-content-sm-center" style="margin-top: 0px !important">
-                <div class="col-md-2 d-none d-md-block">
-                    <img src="{{ asset('assets/images/publicidad9.jpg') }}" alt="" width="100%" style="margin-bottom: 10px;border-radius: 5px !important;">
-                    <img src="{{ asset('assets/images/publicidad9.jpg') }}" alt="" width="100%" style="margin-bottom: 10px;border-radius: 5px !important;">
-                </div>
-                <div class="col-md-8">
+                <div class="col-md-10">
                     <div class="row justify-content-sm-center" style="margin-top:0px !important">
                         @foreach ($campaigns as $campaign)
                             <div class="col-xl-12" >

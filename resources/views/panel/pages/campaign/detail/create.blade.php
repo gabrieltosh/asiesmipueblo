@@ -55,7 +55,7 @@
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Fecha de Campaña</label>
-                                        <input id="campaign_date" type="date" class="form-control" name="campaign_date"
+                                        <input required id="campaign_date" type="date" class="form-control" name="campaign_date"
                                              >
                                     </div>
                                     <div class="form-group">

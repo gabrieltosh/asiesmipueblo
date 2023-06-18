@@ -34,9 +34,9 @@ class PageController extends Controller
         $campaigns = DetailCampaign::with('section', 'files')->where('campaign_id', $campaign_id)->get();
         return view('pages.detail-campaign', compact('campaigns', 'detail_id'));
     }
-    public function HandleGetBreakingNews()
+    public function HandleGetNews($king_news)
     {
-        $news = News::with('section')->select(
+        $news = News::select(
             'id',
             'title',
             'type',
@@ -45,7 +45,16 @@ class PageController extends Controller
             'views',
             'kind_news',
             'description'
-        )->orderBy('new_date', 'desc')->get();
-        return view('pages.breaking_news', compact('news'));
+        )->where('kind_news',$king_news)
+        ->orderBy('new_date', 'desc')->get();
+        return view('pages.news', compact('news'));
+    }
+    public function HandleDetailNews($new_id){
+        $new= News::where('id',$new_id)->first();
+        News::findOrFail($new_id)->fill([
+            'views' => (int)$new->views + 1
+        ])->save();
+        return view('pages.detail_news', compact('new'));
+
     }
 }

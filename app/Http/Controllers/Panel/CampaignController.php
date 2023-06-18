@@ -130,12 +130,22 @@ class CampaignController extends Controller
         return view('panel.pages.campaign.detail.files',compact('group','detail_id','files'));
     }
     public function HandleStoreFileDetail($campaign_id,$detail_id,Request $request){
-        $imageName = time().'.'.$request->name->extension();
-        $request->name->move(public_path('assets/images/campaign'), $imageName);
-        FilesCampaign::create([
-            'name'=>$imageName,
-            'detail_campaign_id'=>$detail_id
-        ]);
+        $files = [];
+        if ($request->file('files')){
+            foreach($request->file('files') as $key => $file)
+            {
+                $fileName = time().rand(1,99).'.'.$file->extension();
+                $file->move(public_path('assets/images/campaign'), $fileName);
+                $files[]['name'] = $fileName;
+            }
+        }
+        foreach ($files as $key => $file) {
+            FilesCampaign::create([
+                'name'=>$file["name"],
+                'detail_campaign_id'=>$detail_id
+            ]);
+        }
+
         return redirect()->route('campaign.detail.files',[$campaign_id,$detail_id]);
     }
     public function HandleDeleteFileDetail($campaign_id,$detail_id,$file_id){

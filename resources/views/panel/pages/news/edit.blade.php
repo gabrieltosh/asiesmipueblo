@@ -3,19 +3,7 @@
 @section('content')
     <div class="content-wrapper">
         <!-- Content Header (Page header) -->
-        <section class="content-header">
-            <div class="container-fluid">
-                <div class="row mb-2">
-                    <div class="col-sm-6">
-                        <h1>Crear Noticia</h1>
-                    </div>
-                    <div class="col-sm-6">
-                        <a href="{{ route('news.index') }}" style="width: 100px" type="button"
-                            class="btn btn-block btn-default btn-sm float-right">Cancelar</a>
-                    </div>
-                </div>
-            </div><!-- /.container-fluid -->
-        </section>
+        <br>
 
         <!-- Main content -->
         <section class="content">
@@ -27,23 +15,32 @@
                         <!-- general form elements -->
                         <div class="card card-primary">
                             <div class="card-header">
-                                <h3 class="card-title">Crear Campaña</h3>
+                                <h3 class="card-title">Actualizar Noticia</h3>
                             </div>
                             <!-- /.card-header -->
                             <!-- form start -->
-                            <form method="post" action="{{ route('news.store') }}" enctype="multipart/form-data">
+                            <form method="post" action="{{ route('news.update',$new->id) }}" enctype="multipart/form-data">
                                 {{ csrf_field() }}
+                                @method('PUT')
                                 <div class="card-body">
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Titulo Noticia</label>
                                         <input type="text" class="form-control" name="title"
-                                            placeholder="Titulo Campaña" required>
+                                            placeholder="Titulo Campaña" required value="{{$new->title}}">
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Tipo Recurso</label>
                                         <select name="type" id="type" class="form-control" required>
-                                            <option value="video">Video</option>
-                                            <option value="image">Imagen</option>
+                                            @if ( $new->type=='video')
+                                                <option value="video" selected>Video</option>
+                                            @else
+                                                <option value="video" >Video</option>
+                                            @endif
+                                            @if ( $new->type=='image')
+                                                <option value="image" selected>Imagen</option>
+                                            @else
+                                                <option value="image">Imagen</option>
+                                            @endif
                                         </select>
                                     </div>
                                     <div class="form-group">
@@ -51,30 +48,39 @@
                                         <input id="resource_file" type="file" class="form-control" name="resource_name_file"
                                              >
                                         <input id="resource_text" type="text" class="form-control" name="resource_name_text"
-                                            placeholder="Frame Video Facebook">
+                                            placeholder="Frame Video Facebook" value="{{$new->resource_name}}">
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Fecha de Noticia</label>
                                         <input id="new_date" type="date" class="form-control" name="new_date"
-                                             >
+                                        value="{{$new->new_date}}" required>
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Clase de Noticia</label>
                                         <select name="kind_news" id="kind_news" class="form-control" required>
-                                            <option value="ultimo">Lo ultimo</option>
-                                            <option value="destacado">Lo mas destacado</option>
+                                            @if ( $new->type=='ultimo')
+                                                <option value="ultimo" selected>Lo ultimo</option>
+                                            @else
+                                                <option value="ultimo">Lo ultimo</option>
+                                            @endif
+                                            @if ( $new->type=='destacado')
+                                                <option value="destacado" selected>Lo mas destacado</option>
+                                            @else
+                                                <option value="destacado">Lo mas destacado</option>
+                                            @endif
                                         </select>
                                     </div>
                                     <div class="form-group">
                                         <label for="exampleInputEmail1">Descripción</label>
                                         <textarea id="summernote" name="description" required>
+                                            {{$new->description}}
                                         </textarea>
                                     </div>
                                 </div>
                                 <!-- /.card-body -->
 
                                 <div class="card-footer">
-                                    <button type="submit" class="btn btn-primary">Crear</button>
+                                    <button type="submit" class="btn btn-primary">Actualizar</button>
                                 </div>
                             </form>
                         </div>

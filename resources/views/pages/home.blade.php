@@ -96,7 +96,7 @@
                         </div>
                         <div class="col-6 col-lg-3">
                             <!-- Counter type 2-->
-                            <a href="{{ route('campaign_page') }}">
+                            <a href="{{ route('news','ultimo') }}">
                                 <div class="counter-type-2"><img src="{{ asset('assets/images/send.png') }}"
                                         alt="" class="img-layout">
                                     <div class="offset-xxl-top-10" style="margin-top: 10px;">
@@ -108,7 +108,7 @@
                         </div>
                         <div class="col-6 col-lg-3">
                             <!-- Counter type 2-->
-                            <a href="{{ route('campaign_page') }}">
+                            <a href="{{ route('news','destacado') }}">
                                 <div class="counter-type-2"><img src="{{ asset('assets/images/up-left-arrow.png') }}"
                                         alt="" class="img-layout">
                                     <div class="offset-xxl-top-10" style="margin-top: 10px;">
@@ -121,7 +121,7 @@
                         </div>
                         <div class="col-6 col-lg-3">
                             <!-- Counter type 2-->
-                            <a href="{{ route('campaign_page') }}">
+                            <a href="#">
                                 <div class="counter-type-2"><img src="{{ asset('assets/images/video-camera.png') }}"
                                         alt="" class="img-layout">
                                     <div class="offset-xxl-top-10" style="margin-top: 10px;">

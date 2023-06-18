@@ -42,8 +42,9 @@
                                     <thead>
                                         <tr>
                                             <th class="text-center" style="width: 10px">#</th>
-                                            <th class="text-center">Grupo</th>
-                                            <th class="text-center">Fecha de Creación</th>
+                                            <th class="text-center">Titulo</th>
+                                            <th class="text-center">Tipo Noticia</th>
+                                            <th class="text-center">Fecha de Noticia</th>
                                             <th style="width: 40px">Acciones</th>
                                         </tr>
                                     </thead>
@@ -51,14 +52,15 @@
                                         @foreach ($data as $item)
                                             <tr>
                                                 <td class="text-center">{{ $item->id }}</td>
-                                                <td class="text-center">{{ $item->name }}</td>
-                                                <td class="text-center">{{$item->created_at}}</td>
+                                                <td class="text-center">{{ $item->title }}</td>
+                                                <td class="text-center">{{ ucwords($item->kind_news)}}</td>
+                                                <td class="text-center">{{$item->new_date}}</td>
                                                 <td class="text-center">
                                                     <div class="btn-group">
-                                                        <a href="{{route('campaign.detail.index',$item->id)}}" class="btn btn-sm btn-default">
+                                                        <a href="{{route('news.files',$item->id)}}" class="btn btn-sm btn-default">
                                                             <i class="fa fa-bars" aria-hidden="true"></i>
                                                         </a>
-                                                        <a href="{{route('campaign.edit',$item->id)}}" class="btn btn-sm btn-primary">
+                                                        <a href="{{route('news.edit',$item->id)}}" class="btn btn-sm btn-primary">
                                                             <i class="fa fa-edit" aria-hidden="true"></i>
                                                         </a>
                                                         <button type="button" class="btn btn-sm btn-danger" data-toggle="modal" data-target="#modal-default-{{$item->id}}">
@@ -82,7 +84,7 @@
                                                     </div>
                                                     <div class="modal-footer justify-content-between">
                                                       <button type="button" class="btn btn-default" data-dismiss="modal">Cerrar</button>
-                                                      <a href="{{route('campaign.delete',$item->id)}}" type="button" class="btn btn-danger">Eliminar</a>
+                                                      <a href="{{route('news.delete',$item->id)}}" type="button" class="btn btn-danger">Eliminar</a>
                                                     </div>
                                                   </div>
                                                   <!-- /.modal-content -->

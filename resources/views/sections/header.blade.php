@@ -15,7 +15,7 @@
                         </div>
                         <div class="col-xs-3 col-xl-6 text-center">
                             <!--Navbar Brand-->
-                            <div class="rd-navbar-brand" style="display:block !important;"><a href="index.html"><img
+                            <div class="rd-navbar-brand" style="display:block !important;"><a href="{{ route('home_page') }}"><img
                                         style='margin-top: -5px;margin-left: -15px; ' width='270' height='46'
                                         src='{{ asset('assets/images/logo_h_1.png') }}' alt='' /></a></div>
                         </div>
@@ -59,10 +59,10 @@
                                             href="{{ route('home_page') }}"><span>Inicio</span></a>
                                     </li>
                                     <li class="{{ request()->is('campai') ? 'active' : '' }}"><a
-                                            href="{{ route('breaking_news') }}"><span>Lo Ultimo</span></a>
+                                            href="{{ route('news','ultimo') }}"><span>Lo Ultimo</span></a>
                                     </li>
                                     <li class="{{ request()->is('campaig') ? 'active' : '' }}"><a
-                                            href="{{ route('campaign_page') }}"><span>Lo mas Destacado</span></a>
+                                            href="{{  route('news','destacado')  }}"><span>Lo mas Destacado</span></a>
                                     </li>
                                     <li class="{{ request()->is('campaign') ? 'active' : '' }}"><a
                                             href="{{ route('campaign_page') }}"><span>Campañas</span></a>

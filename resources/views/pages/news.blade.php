@@ -9,11 +9,7 @@
                 </div>
             </div>
             <div class="row justify-content-sm-center" style="margin-top: 0px !important">
-                <div class="col-md-2 d-none d-md-block">
-                    <img src="{{ asset('assets/images/publicidad9.jpg') }}" alt="" width="100%" style="margin-bottom: 10px;border-radius: 5px !important;">
-                    <img src="{{ asset('assets/images/publicidad9.jpg') }}" alt="" width="100%" style="margin-bottom: 10px;border-radius: 5px !important;">
-                </div>
-                <div class="col-md-8">
+                <div class="col-md-10">
                     <div class="row justify-content-sm-center" style="margin-top:0px !important">
                         @foreach ($news as $new)
                             <div class="col-xl-12" >
@@ -36,13 +32,11 @@
                                                         <span
                                                             class="text-middle icon-xxs novi-icon text-picton-blue mdi mdi-eye">&nbsp;</span>{{$new->views}}<span>&nbsp;Vistas</span>
                                                     </li>
-                                                    <li class="list-inline-item">
-                                                        <span class="text-middle icon-xxs novi-icon text-picton-blue mdi mdi-view-list">&nbsp;</span><span>&nbsp;{{$new->section->name}}</span>
-                                                    </li>
+
                                                 </ul>
                                                 <!-- Post Meta-->
                                                 <h3 class="post-title"><a
-                                                        href="{{ route('new_page.detail',[$new->new_id, $new->id]) }}">{{ $new->title }}</a>
+                                                        href="{{ route('news.detail',[$new->id]) }}">{{ $new->title }}</a>
                                                 </h3>
                                                 <!-- Post Media-->
                                                 <div class="post-media offset-top-10">
@@ -54,10 +48,10 @@
                                                         @endif
                                                         @if ($new->type === 'image')
                                                             <div data-lightgallery="group"><a class="thumbnail-classic"
-                                                                    href="{{ route('news.detail',[$new->new_id,$new->id]) }}"
+                                                                    href="{{ route('news.detail',[$new->id]) }}"
                                                                     target="_self">
                                                                     <figure><img width="570" height="200"
-                                                                            src="{{ asset('assets/images/new/' . $new->resource_name) }}"
+                                                                            src="{{ asset('assets/images/news/' . $new->resource_name) }}"
                                                                             alt="">
                                                                     </figure>
                                                                 </a>
@@ -68,7 +62,7 @@
                                             </div>
                                             <section class="post-content offset-top-31 text-right">
                                                 <a class="btn btn-default" style="margin-top:10px !important;"
-                                                    href="{{ route('new_page.detail', [$new->new_id, $new->id]) }}">Leer mas</a>
+                                                    href="{{ route('news.detail', [$new->id]) }}">Leer mas</a>
                                             </section>
                                         </article>
                                     </div>

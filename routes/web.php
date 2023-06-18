@@ -21,8 +21,8 @@ use App\Http\Controllers\Panel\NewsController;
 Route::get('/',[PageController::class,'HandleGetHome'])->name('home_page');
 Route::get('campaign/{campaign_id}/detail/{detail_id}',[PageController::class,'HandleGetDetailCampaign'])->name('campaign_page.detail');
 Route::get('campaign',[PageController::class,'HandleGetCampaign'])->name('campaign_page');
-Route::get('news/{news_id}',[PageController::class,'HandleDetailNews'])->name('news.detail');
-Route::get('breaking_news',[PageController::class,'HandleGetBreakingNews'])->name('breaking_news');
+Route::get('new/{news_id}/detail',[PageController::class,'HandleDetailNews'])->name('news.detail');
+Route::get('news/{kind_news}',[PageController::class,'HandleGetNews'])->name('news');
 Route::get('about_us',[PageController::class,'HandleGetAboutUs'])->name('about_us_page');
 Route::get('contact',[PageController::class,'HandleGetContact'])->name('contact_page');
 
@@ -53,6 +53,13 @@ Route::get('panel/campaign/{campaign_id}/detail/{detail_id}/files/{file_id}',[Ca
 Route::get('panel/news',[NewsController::class,'HandleIndexNews'])->name('news.index');
 Route::get('panel/news/create',[NewsController::class,'HandleCreateNews'])->name('news.create');
 Route::post('panel/news/store',[NewsController::class,'HandleStoreNews'])->name('news.store');
+Route::put('panel/news/{id_news}/update',[NewsController::class,'HandleUpdateNews'])->name('news.update');
+Route::get('panel/news/{id_news}/edit',[NewsController::class,'HandleEditNews'])->name('news.edit');
+Route::get('panel/news/{id}/delete',[NewsController::class,'HandleDeleteNews'])->name('news.delete');
+Route::get('panel/news/{id}/files',[NewsController::class,'HandleGetFilesNews'])->name('news.files');
+Route::post('panel/news/{id}/files',[NewsController::class,'HandleStoreFilesNews'])->name('news.files_store');
+Route::get('panel/news/{id}/files/{file_id}',[NewsController::class,'HandleDeleteFileNews'])->name('news.files_delete');
+
 
 
 Route::get('login',[LoginController::class,'HandleViewLogin'])->name('login');

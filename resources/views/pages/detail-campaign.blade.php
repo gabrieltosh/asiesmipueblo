@@ -3,11 +3,7 @@
 @section('content')
     <section class="section novi-background section-20">
         <div class="container">
-            <div class="row justify-content-sm-center" style="margin-top: 0px !important">
-                <div class="col-md-2" style="padding:0px;">
-                    <img src="{{ asset('assets/images/publicidad9.jpg') }}" alt="" width="100%" style="margin-bottom: 10px">
-                    <img src="{{ asset('assets/images/publicidad9.jpg') }}" alt="" width="100%" style="margin-bottom: 10px">
-                </div>
+            <div class="row ustify-content-sm-center" style="margin-top: 0px !important">
                 <div class="col-md-10">
                     <div class="row justify-content-sm-center" style="margin-top: 0px !important">
                         <div class="col-md-12">
@@ -30,11 +26,11 @@
                                             aria-labelledby="accordion-1--card-{{ $campaign->id }}-header"
                                             data-parent="#accordion-1">
                                             <div class="container section-20">
-                                                <div class="row justify-content-sm-center">
+                                                <div class="row ">
                                                     @if (count($campaign->files) == 0)
-                                                        <div class="col-lg-12">
+                                                        <div class="col-lg-12" style="width: 100%">
                                                         @else
-                                                            <div class="col-lg-8">
+                                                            <div class="col-lg-8" style="width: 100%">
                                                     @endif
                                                     <div class="inset-lg-right-20">
                                                         <!-- Blog Default Single-->
@@ -83,7 +79,7 @@
                                                     </div>
                                                 </div>
                                                 @if (count($campaign->files) > 0)
-                                                    <div class="col-lg-4 col-xl-3 offset-top-66 offset-lg-top-0">
+                                                    <div class="col-lg-4 col-xl-4 offset-top-66 offset-lg-top-0">
                                                         <!-- Section Blog Events-->
                                                         <aside class="text-left">
                                                             <h6 class=" text-uppercase text-spacing-60">Imagenes</h6>
@@ -91,16 +87,28 @@
                                                             <div class="offset-top-34">
                                                                 <div class="group-xs " data-lightgallery="group"
                                                                     data-flickr-tags="tm58888_landscapes">
-                                                                    @foreach ($campaign->files as $file)
-                                                                        <a class="flickr-item thumbnail-classic"
-                                                                            data-lightgallery="item"
-                                                                            href="{{ asset('assets/images/campaign/' . $file->name) }}"
-                                                                            data-image_c="href" data-type="flickr-item"><img
-                                                                                width="90" height="90"
-                                                                                data-title="alt"
-                                                                                src="{{ asset('assets/images/campaign/' . $file->name) }}"
-                                                                                alt="" data-image_q="src"></a>
-                                                                    @endforeach
+                                                                    <div class="row">
+                                                                        <div class="col-12">
+                                                                            <div class="row">
+                                                                                @foreach ($campaign->files as $file)
+                                                                                    <div class="col-md-6"
+                                                                                        style="padding:1px;margin:0px">
+                                                                                        <a class="flickr-item thumbnail-classic"
+                                                                                            data-lightgallery="item"
+                                                                                            href="{{ asset('assets/images/campaign/' . $file->name) }}"
+                                                                                            data-image_c="href"
+                                                                                            data-type="flickr-item"><img
+                                                                                                width="50"
+                                                                                                height="50"
+                                                                                                data-title="alt"
+                                                                                                src="{{ asset('assets/images/campaign/' . $file->name) }}"
+                                                                                                alt=""
+                                                                                                data-image_q="src"></a>
+                                                                                    </div>
+                                                                                @endforeach
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
 
                                                                 </div>
                                                             </div>
@@ -116,6 +124,13 @@
                     </div>
                 </div>
             </div>
+            <div class="col-md-2" style="padding:0px;">
+                <img src="{{ asset('assets/images/publicidad9.jpg') }}" alt="" width="100%"
+                    style="margin-bottom: 10px">
+                <img src="{{ asset('assets/images/publicidad9.jpg') }}" alt="" width="100%"
+                    style="margin-bottom: 10px">
+            </div>
+        </div>
         </div>
     </section>
 @endsection
