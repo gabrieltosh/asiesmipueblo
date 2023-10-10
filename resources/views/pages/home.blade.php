@@ -22,9 +22,10 @@
                                     alt="First slide">
                                 <div class="carousel-caption">
                                     <h1><span class="big text-uppercase">ASI ES MI PUEBLO</span></h1>
-                                    <h4 class="text-light">
-                                        Brinda ayuda a familias en extrema pobreza, mediante campañas solidarias en las que
-                                        participa la población y se efectúan cada 15 días.
+                                    <h4 class="text-light" >
+                                        <strong style="background-color:rgb(0, 223, 162, 0.6);">
+                                            Así es mi Pueblo “Ukhamau Markajax”, tiene más de once años de trayectoria dedicados a la producción de audiovisuales y programas de televisión, cuenta con profesionales altamente capacitados en la elaboración de estrategias comunicacionales, y personal especializado en la elaboración de cortometrajes, documentales, spots, cápsulas, entre otros.
+                                        </strong>
                                     </h4>
                                 </div>
                             </div>
@@ -33,10 +34,10 @@
                                     alt="Second slide">
                                 <div class="carousel-caption">
                                     <h1><span class="big text-uppercase">ASI ES MI PUEBLO</span></h1>
-                                    <h4 class="text-light">La labor social que realiza tiene más de diez años de vigencia en
-                                        la urbe
-                                        alteña y está enmarcada en los valores de respeto, responsabilidad y sensibilidad
-                                        social.
+                                    <h4 class="text-light">
+                                        <strong style="background-color:rgb(0, 223, 162, 0.6);">
+                                            El Programa de Televisión Así Es Mi Pueblo “Ukhamaw Markajax”, es una revista informativa que se emite desde la ciudad de El Alto – Bolivia, en idiomas aimara y castellano, de lunes a viernes de 20:00 a 21:00 por CVC, Canal 57.1 y Tele Estrella.
+                                        </strong>
                                     </h4>
 
                                 </div>
@@ -46,10 +47,10 @@
                                     alt="Third slide">
                                 <div class="carousel-caption">
                                     <h1><span class="big text-uppercase">ASI ES MI PUEBLO</span></h1>
-                                    <h4 class="text-light">La labor social que realiza tiene más de diez años de vigencia en
-                                        la urbe
-                                        alteña y está enmarcada en los valores de respeto, responsabilidad y sensibilidad
-                                        social.
+                                    <h4 class="text-light">
+                                        <strong style="background-color:rgb(0, 223, 162, 0.6);">
+                                        La labor social que realiza Así Es Mi Pueblo “Ukhamaw Markajax”, tiene más de once años de vigencia en la ciudad de El Alto – Bolivia, se caracteriza por su vocación solidaria, enmarcada en los valores de respeto, responsabilidad y sensibilidad social.
+                                        </strong>
                                     </h4>
                                 </div>
                             </div>
@@ -68,7 +69,7 @@
 
             <div class="row justify-content-sm-center" style="margin:5px 0px !important;">
                 <div class="col-md-12" style="padding:0px;">
-                    <img src="{{ asset('assets/images/publicidad1.png') }}" alt="" width="100%" style="border-radius: 5px !important;">
+                    <img src="{{ asset('assets/images/publicidad11.png') }}" alt="" width="100%" style="border-radius: 5px !important;">
                 </div>
             </div>
 
@@ -144,7 +145,7 @@
                                 aria-label="Close" style="top: 15px; right: 15px; background-color: white; border: none;">
                                 <span aria-hidden="true">&nbsp;&times;&nbsp; </span>
                             </button>
-                            <img src="{{ asset('assets/images/publicidad5.gif') }}" alt="" width="100%" style="border-radius: 10px">
+                            <img src="{{ asset('assets/images/publicidad10.jpg') }}" alt="" width="100%" style="border-radius: 10px">
                         </div>
                     </div>
                 </div>

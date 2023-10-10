@@ -75,8 +75,8 @@
                     </div>
                 </div>
                 <div class="col-md-2 d-none d-md-block">
-                    <img src="{{ asset('assets/images/publicidad9.jpg') }}" alt="" width="100%" style="margin-bottom: 10px;border-radius: 5px !important;">
-                    <img src="{{ asset('assets/images/publicidad9.jpg') }}" alt="" width="100%" style="margin-bottom: 10px;border-radius: 5px !important;">
+                    <img src="{{ asset('assets/images/UrgeBo-350x600-Ani-23.jpg') }}" alt="" width="100%" style="margin-bottom: 10px;border-radius: 5px !important;">
+                    <img src="{{ asset('assets/images/Arte350x450_0.jpg') }}" alt="" width="100%" style="margin-bottom: 10px;border-radius: 5px !important;">
                 </div>
             </div>
 
